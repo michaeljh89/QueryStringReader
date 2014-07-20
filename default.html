@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Query String</title>        
+    <script src="Query.js"></script>
+
+    <script type="text/javascript">
+        
+        function getquery() {
+            var l = document.getElementById("lblbquery");
+            l.innerHTML = getParameterByName('param');
+        }
+
+    </script>
+
+</head>
+<body>
+
+    <h1>Query</h1>
+    <br />
+    <a href="default.html?param=hello" >Go To Url with paramater</a>
+    <br /><br />
+    <a href="#" onclick="getquery()">Get Query</a>    
+    <br /><br />
+    <label id="lblbquery"></label>
+
+</body>
+</html>
